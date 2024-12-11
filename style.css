@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+header{
+    margin-top: 100px;
+}
+
+nav{
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    text-align: center;
+    column-gap: 30px;
+}
+
+.menu li{
+    background-color: darkgray;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    width: 100%;
+    color:white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul a:hover{
+    color: red;
+}
+
+.dropdown-cont{
+    display:none;
+}
+
+.dropdown-cont li{
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 1px 100px 1px 0px;
+}
+
+.dropdown-cont a{
+    color: black;
+    padding: 5px 15px;
+    
+}
+
+.dropdown-men{
+    position: relative;
+}
+
+.dropdown-men:hover .dropdown-cont{
+    display: block;
+    position: absolute;
+}
+
+.kepek{
+    width: 100%;
+}
+.kep{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.kkep{
+    width: 100%;
+}
+
+.kepek img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.mkep{
+    display: none;
+}
+
+.kkep:hover .mkep{
+    display: block;
+}
+
+.kep{
+    position: relative;
+}
+
+.mkep {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+#ablak {
+    width: 400px;
+    background: rgb(237, 240, 240);
+    padding: 15px;
+
+    border-radius: 10px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+        1px 6px 30px 16px rgba(41, 41, 40, 0.93);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+        1px 6px 30px 16px rgba(41, 41, 40, 0.93);
+    
+    position: relative;
+    z-index: 1000;
+
+    
+}
+
+form fieldset{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 50px 50px;
+}
+
+label{
+    text-align: right;
+}
+
+.tarto{
+    position: absolute;
+    left: 25%;
+    top: 50%;
+}
+.bezar {
+    position: absolute;
+
+    right: 18px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(171, 179, 179);
+    color: rgb(177, 38, 38);
+    font-size: 15pt;
+    cursor: grab;
+    bottom: 80px;
+}
+
+.bezar:hover .ablak {
+    background: blue;
+    color: red;
+    display: none;
+}
+

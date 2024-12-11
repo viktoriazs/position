@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Position</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Position</h1></header>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">menü</a></li>
+          <li class="dropdown-men">
+            <a href="#">menü</a>
+            <ul class="dropdown-cont">
+              <li><a href="#">almenü</a></li>
+              <li><a href="#">almenü</a></li>
+            </ul>
+          </li>
+          <li><a href="#">menü</a></li>
+        </ul>
+      </nav>
+      <section class="tarto">
+        <div id="ablak">
+            <span class="bezar" onclick="bezar()">X</span>
+            <form>
+                <fieldset>
+                    <legend>Tetszik a Position tulajdonság?</legend>
+                    <label for="igen">Igen </label>
+                    <input type="radio" name="kerdes" id="igen" />
+                    <label for="nem">Nem </label>
+                    <input type="radio" name="kerdes" id="nem" />
+                </fieldset>
+            </form>
+        </div>
+    </section>
+      <section class="kepek">
+        <div class="kep">
+          <div class="kkep">
+            <img src="kepek/main coon.jpg" alt="main coon" />
+
+            <div class="mkep">
+              <img src="kepek/main coon.jpg" alt="main coon" />
+            </div>
+          </div>
+          <div class="kkep">
+            <img src="kepek/meg ez a cica.jpg" alt="cica" />
+
+            <div class="mkep">
+              <img src="kepek/meg ez a cica.jpg" alt="cica" />
+            </div>
+          </div>
+          <div class="kkep">
+            <img src="kepek/norveg macska.jpg" alt="norveg macska" />
+
+            <div class="mkep">
+              <img src="kepek/norveg macska.jpg" alt="norveg macska" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="kepek">
+        <img src="kepek/main coon.jpg" alt="main coon">
+      </div>
+      <footer></footer>
+    </main>
+  </body>
+  <script>
+    function bezar() {
+            console.log("hahó");
+            document.getElementById("ablak").style.display = "none";
+        }
+  </script>
+</html>
